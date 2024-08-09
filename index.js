@@ -18,10 +18,10 @@ app.get('/',(req,res)=>{
 })
 
 //getting output vlue from html file by using post method
-app.post('/',urlencodedparser,(req,res)=>{
+app.post('/calc-express',urlencodedparser,(req,res)=>{
 	console.log(req.body);
     user={Results:req.body.result};
-	res.redirect('/')
+	res.redirect('/calc-express')
 });
 
 //Sending Data To Html to print output
