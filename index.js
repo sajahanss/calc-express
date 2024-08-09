@@ -21,7 +21,7 @@ app.get('/',(req,res)=>{
 app.post('/',urlencodedparser,(req,res)=>{
 	console.log(req.body);
     user={Results:req.body.result};
-	res.redirect('/calc-express')
+	res.redirect('/')
 });
 
 //Sending Data To Html to print output
